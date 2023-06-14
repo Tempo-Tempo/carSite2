@@ -1,0 +1,23 @@
+{
+  "name": "globalproject",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "click-outside-vue3": "^4.0.1",
+    "core-js": "^3.8.3",
+    "dadata-suggestions": "^1.1.1",
+    "firebase": "^9.21.0",
+    "mysql": "^2.18.1",
+    "vue": "^3.2.13",
+    "vue-router": "^4.1.6",
+    "vue-yandex-maps": "^1.0.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  }
+}
