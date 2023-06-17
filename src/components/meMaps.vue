@@ -47,16 +47,17 @@ export default {
   methods: {
     anyCoords(e) {
       this.marks = e.get("coords");
+      console.log(this.handlerCity)
     },
   },
   async mounted() {
     await loadYmap(this.settings);
-    ymaps.geocode(`${this.handlerCity}`).then(function (res) {
+    ymaps.geocode(`${this.handlerCity.name}`).then(function (res) {
       let test = res.geoObjects.get(0);
     });
 
     await loadYmap(this.settings);
-    ymaps.geocode(`${this.handlerCity}`).then((res) => {
+    ymaps.geocode(`${this.handlerCity.name}`).then((res) => {
       let newCoords = res.geoObjects.get(0).geometry.getCoordinates();
       this.coords = newCoords;
     });

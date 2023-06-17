@@ -12,9 +12,10 @@ const settings = {
   version: "2.1", // Версия Я.Карт
 };
 const app = createApp(App);
-app.mount("#app");
+
+app.use(router);
 components.forEach((component) => {
   app.component(component.name, component);
 });
 app.use(YmapPlugin, settings);
-app.use(router);
+app.mount("#app");

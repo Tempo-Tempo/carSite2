@@ -79,7 +79,7 @@ export default {
     },
     takeCity(handlerCity) {
       this.handlerInput = handlerCity;
-      this.pickedCity = handlerCity;
+      this.pickedCity.name = handlerCity;
       console.log(this.pickedCity);
       this.compliter = true;
       this.$emit("handleСity", handlerCity);
